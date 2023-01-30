@@ -36,7 +36,7 @@ curl https://alx.sh | sh
 Asahi Linux Desktop is installed here to facilitate subsequent operations (such as connect to wifi, update the system, etc.)
 
 
-After following the installation instructions, you can enter the Asahi Linux system. Before you start building Gentoo, make sure you have upgraded Asahi Linux to the latest version with GPU support (https://asahilinux.org/2022/12/gpu-drivers-now-) in-asahi-linux/)
+After following the installation instructions, you can enter the Asahi Linux system. Before you start building Gentoo, make sure you have upgraded Asahi Linux to the latest version with GPU support (https://asahilinux.org/2022/12/gpu-drivers-now-in-asahi-linux/)
 
 
 ## Build Gentoo Stage4 
@@ -54,7 +54,7 @@ mkdir -pv /mnt/gentoo
 Download stage3 for arm64 https://www.gentoo.org/downloads/
 ```shell
 cd /mnt/gentoo
-wget -c https://bouncer.gentoo.org/fetch/root/all/releases/arm64/autobuilds/20230122T234700Z/stage3-arm64-desktop-openrc- 20230122T234700Z.tar.xz
+wget -c https://bouncer.gentoo.org/fetch/root/all/releases/arm64/autobuilds/20230122T234700Z/stage3-arm64-desktop-openrc-20230122T234700Z.tar.xz
 ```
 
 Decompress stage3:
