@@ -7,11 +7,11 @@ Experimental, make sure your data is backed up before you use it.
 
 ## Environment preparation
 
-Prepare an m1 model mac, make sure Time Machine is turned off and have at least 40G of free space.
+Prepare an m1 model mac, ensure Time Machine is turned off, and have at least 40G free space.
 
-If you have used the time machine make sure you have deleted all copies of the time machine
+If you have used the time machine, make sure you have deleted all copies of the time machine
 
-To view all Time Machine backups.
+View all Time Machine backups.
 
 ```shell
 tmutil listbackups
@@ -40,7 +40,8 @@ After following the installation instructions, you can enter the Asahi Linux sys
 
 
 ## Build Gentoo Stage4 
-After the update is complete we can build the new gentoo system.
+
+After the update is complete, we can build the new gentoo system.
 
 > Switch to the root user to do the following
 
@@ -56,7 +57,7 @@ cd /mnt/gentoo
 wget -c https://bouncer.gentoo.org/fetch/root/all/releases/arm64/autobuilds/20230122T234700Z/stage3-arm64-desktop-openrc- 20230122T234700Z.tar.xz
 ```
 
-Decompress :
+Decompress stage3:
 ```shell
 tar xpvf stage3-*.tar.xz --xattrs-include="*. *" --numeric-owner
 ```
@@ -71,7 +72,6 @@ cp -r /usr/lib/firmware /mnt/gentoo/usr/lib
 
 Hang the necessary files in.
 
-
 ```shell
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
@@ -81,7 +81,7 @@ mount --make-rslave /mnt/gentoo/dev
 mount --bind /run /mnt/gentoo/run
 mount --make-slave /mnt/gentoo/run
 ```
-To get to the chroot.
+chroot:
 
 ```shell
 chroot /mnt/gentoo /bin/bash
@@ -192,6 +192,9 @@ reboot -f
 
 After that you are in the Gentoo system, Happy hacking!
 
+screenshot:
+
+![](./assest/gentoo-sway.png)
 
 
 Reference document: https://blog.devgenius.io/installing-gentoo-linux-in-apple-macbook-pro-m1-49e163534898
