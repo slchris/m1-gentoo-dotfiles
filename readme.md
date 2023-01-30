@@ -33,7 +33,7 @@ sudo tmutil delete Y-M-D.backup
 curl https://alx.sh | sh
 ```
 
-Asahi Linux Desktop is installed here to facilitate subsequent operations (such as linking to wifi to update the system, etc.)
+Asahi Linux Desktop is installed here to facilitate subsequent operations (such as connect to wifi, update the system, etc.)
 
 
 After following the installation instructions, you can enter the Asahi Linux system. Before you start building Gentoo, make sure you have upgraded Asahi Linux to the latest version with GPU support (https://asahilinux.org/2022/12/gpu-drivers-now-) in-asahi-linux/)
@@ -126,7 +126,7 @@ reboot
 
 ## Install Gentoo
 
-While rebooting into the grub menu, press e to enter modify mode and delete a few characters from the UUID after ``root=` in the line ``linux /boot/vmlinuz-linux-asahi root=`` and press control+x to enter boot.
+While rebooting into the grub menu, press e to enter modify mode and delete a few characters from the UUID after `root=` in the line `linux /boot/vmlinuz-linux-asahi root=` and press control+x to enter boot.
 
 This time the boot will fail to a rescue shell
 
